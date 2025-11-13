@@ -31,3 +31,4 @@ npm run dev
 The frontend defaults to calling the backend at http://localhost:5000. Adjust `NEXT_PUBLIC_API_BASE` if needed.
 
 Database schema is in `backend/schema.sql`.
+# dbms-mini
