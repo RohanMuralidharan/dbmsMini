@@ -1,4 +1,4 @@
-const BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:5000'
+const BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:5001'
 
 async function handleResponse(res){
   if (!res) throw new Error('No response')
