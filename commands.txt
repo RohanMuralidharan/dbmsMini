@@ -1,0 +1,19 @@
+Backend:
+
+cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && export FLASK_APP=app.py && flask db_create && flask run
+
+Frontend:
+
+cd frontend && npm i & npm run dev
+
+
+
+///////
+
+cd /Users/naresh/naresh/cs/college/dbmsminiproject/backend && \
+# kill any existing backend listeners (5000/5001)
+for p in $(lsof -ti:5000 -sTCP:LISTEN -n -P || true) $(lsof -ti:5001 -sTCP:LISTEN -n -P || true); do if [ -n "$p" ]; then echo "Killing existing backend PID $p"; kill -9 $p || true; fi; done && \
+# create venv if needed and install deps (idempotent)
+if [ ! -d venv ]; then python3 -m venv venv; fi && ./venv/bin/pip install -r requirements.txt && \
+# reset DB (destructive) and run flask from venv
+./venv/bin/flask --app app db_reset && ./venv/bin/flask --app app run --host=127.0.0.1 --port=5001

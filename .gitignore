@@ -1,0 +1,171 @@
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npmrc.lock
+# Optional npm cache folder
+.npm/
+
+# Next.js / React
+.next/
+out/
+build/
+dist/
+.next/cache/
+.next/standalone/
+.next/static/
+# Vite
+dist/
+.vite/
+# TypeScript incremental info
+*.tsbuildinfo
+
+# Environment files (keep examples committed)
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.secret
+.env.*.backup
+.env.*.key
+
+# Misc JS caches and bundler artifacts
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.cache-loader/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log.gz
+debug.log*
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Build/test outputs
+coverage/
+build/
+dist/
+public/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+Icon?
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.iml
+
+# JetBrains
+/.idea/*
+!.idea/inspectionProfiles
+*.iws
+out/
+
+# Python / FastAPI
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pipenv-*
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.pyright/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Runtime / server stuff
+*.pid
+*.sock
+gunicorn.log
+uvicorn.log
+celerybeat-schedule
+instance/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets & keys
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+private_keys/
+credentials.json
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+docker-compose.*.local.yml
+
+# CI / deployment
+.vercel/
+.vercel/cache/
+.now/
+.netlify/
+.build/
+firebase-debug.log
+
+# Misc
+*.bak
+*.swp
+*~
+*.tmp
+*.temp
+.cache/
+history/
+.tmp/
+coverage/
+
+# Optional: ignore lockfiles? (Uncomment if you don't want to track them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Keep example env file
+!.env.example
